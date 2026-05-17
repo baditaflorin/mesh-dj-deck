@@ -49,3 +49,134 @@ body,
   opacity: 0.6;
   font-variant-numeric: tabular-nums;
 }
+
+.dj-screen {
+  padding: 5rem 1rem 2rem;
+  max-width: 38rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.dj-screen h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: var(--mesh-accent);
+}
+.dj-status {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.dj-name input,
+.dj-form input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--mesh-fg);
+  font-size: 0.95rem;
+}
+.dj-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.dj-take,
+.dj-release,
+.dj-drop,
+.dj-react-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--mesh-fg);
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.dj-take:disabled,
+.dj-drop:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.dj-chip {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(179, 102, 255, 0.15);
+  border: 1px solid rgba(179, 102, 255, 0.4);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+}
+.dj-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.8rem;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 0.6rem;
+}
+.dj-now {
+  padding: 1rem;
+  border: 1px solid rgba(179, 102, 255, 0.4);
+  border-radius: 0.7rem;
+  background: rgba(179, 102, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  opacity: 0.95;
+  transition: opacity 240ms ease;
+}
+.dj-now.dj-flash {
+  opacity: 1;
+}
+.dj-now-meta {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.dj-now-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.dj-now-artist {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.dj-react {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+.dj-feed {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.dj-feed-row {
+  font-size: 0.85rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+.dj-feed-title {
+  font-weight: 600;
+}
+.dj-feed-artist {
+  opacity: 0.7;
+}
+.dj-feed-tally {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+}
