@@ -1,7 +1,7 @@
 # mesh-dj-deck
 
 [![pages](https://img.shields.io/badge/live-baditaflorin.github.io%2Fmesh-dj-deck-b366ff)](https://baditaflorin.github.io/mesh-dj-deck/)
-[![version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/baditaflorin/mesh-dj-deck/blob/main/package.json)
+[![version](https://img.shields.io/badge/version-0.1.1-blue)](https://github.com/baditaflorin/mesh-dj-deck/blob/main/package.json)
 [![license](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 > Single-DJ rotation; claim the deck 90s, drop tracks, audience reacts.
