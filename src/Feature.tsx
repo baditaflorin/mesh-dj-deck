@@ -2,7 +2,6 @@ import { useState } from "react";
 import {
   useEventLog,
   useExpiringClaim,
-  useFairRng,
   useFlashOnChange,
   useNamedPeer,
   useReactions,
@@ -43,7 +42,6 @@ export function Feature({ room, config }: Props) {
 function Body({ room, config }: { room: YRoom; config: MeshConfig }) {
   const { name, setName, nameOf, myName } = useNamedPeer(config, room);
   const claim = useExpiringClaim(room, "dj", CLAIM_MS);
-  useFairRng(room, "dj-salts");
   const log = useEventLog<Track>(room, "tracks");
   const reactions = useReactions(room, "track-reactions");
 
